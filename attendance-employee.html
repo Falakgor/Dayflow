@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Attendance - Dayflow HRMS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="brand"><span class="logo">Dayflow</span></div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main">
+    <section class="panel">
+      <h2>Attendance</h2>
+      <div class="grid-2">
+        
+        <!-- Today card -->
+        <div class="card">
+          <h3>Today</h3>
+          <div class="kv">
+            <span>Status</span><span>Present</span>
+            <span>Check-in</span><span>09:31 AM</span>
+            <span>Check-out</span><span>—</span>
+          </div>
+          <div class="btn-row">
+            <a class="btn success" href="#">Check-in</a>
+            <a class="btn dark" href="#">Check-out</a>
+          </div>
+        </div>
+
+        <!-- Week view card -->
+        <div class="card">
+          <h3>Week view</h3>
+          <div class="week">
+            <div class="day present">Mon</div>
+            <div class="day present">Tue</div>
+            <div class="day leave">Wed</div>
+            <div class="day present">Thu</div>
+            <div class="day half">Fri</div>
+          </div>
+          <small class="hint">Legend: Present, Absent, Half-day, Leave</small>
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
