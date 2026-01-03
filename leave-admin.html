@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Leave Requests - Dayflow HRMS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="logo">Dayflow</span></div></header>
+<main class="main">
+  <section class="panel">
+    <h2>Leave & Time-Off</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Apply for leave</h3>
+        <form class="form">
+          <div class="form-row"><label>Leave type</label>
+            <select><option>Paid</option><option>Sick</option><option>Unpaid</option></select>
+          </div>
+          <div class="form-row"><label>Date range</label>
+            <div class="range"><input type="date" /><span>to</span><input type="date" /></div>
+          </div>
+          <div class="form-row"><label>Remarks</label><textarea></textarea></div>
+          <div class="form-actions"><a class="btn primary" href="#">Submit</a></div>
+        </form>
+      </div>
+      <div class="card">
+        <h3>My requests</h3>
+        <table class="table">
+          <thead><tr><th>Type</th><th>Dates</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Sick</td><td>03–04 Jan</td><td><span class="badge pending">Pending</span></td></tr>
+            <tr><td>Paid</td><td>12–14 Dec</td><td><span class="badge approved">Approved</span></td></tr>
+            <tr><td>Unpaid</td><td>22 Nov</td><td><span class="badge rejected">Rejected</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
